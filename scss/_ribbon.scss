@@ -1,0 +1,19 @@
+#ribbon {
+  background-color: white;
+  color: #1d1d1f;
+  font-weight: 400;
+  height: 44px;
+  .ribbon__container {
+    width: 692px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    a {
+      color: $blue;
+      line-height: 44px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

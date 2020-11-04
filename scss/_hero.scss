@@ -3,6 +3,7 @@
   color: $white;
   height: 816px;
   top: 0;
+  overflow: hidden;
   .hero__image {
     z-index: -1;
     top: -56px;
@@ -49,7 +50,7 @@
       letter-spacing: 0.025em;
       margin: 5px 0;
       &:nth-of-type(n + 2) {
-        color: #a1a1a6;
+        color: $gray;
         font-weight: 300;
       }
       &:nth-of-type(4) {
@@ -58,7 +59,7 @@
     }
   }
 }
-.hero__2 {
+#hero__2 {
   color: black;
   height: 934px;
   .hero__image {
@@ -68,6 +69,29 @@
   .copy__wrapper {
     .cta__links {
       color: $blue;
+    }
+  }
+  .copy__wrapper__bottom {
+    h2 {
+      font-weight: 500;
+      &:nth-of-type(n + 2) {
+        color: $darkgray;
+      }
+    }
+  }
+}
+#hero__3 {
+  background-color: #000;
+  z-index: -1;
+  height: 692px;
+  .hero__image {
+    top: 35%;
+    height: 450px;
+  }
+  .copy__wrapper {
+    padding-top: 43px;
+    .logo__image {
+      height: 64px;
     }
   }
 }

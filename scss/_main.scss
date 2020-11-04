@@ -1,0 +1,109 @@
+#modules {
+  padding: 0 10px;
+  .col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+    flex-wrap: nowrap;
+    .module {
+      position: relative;
+      height: 580px;
+      width: 100%;
+      background-color: #fbfbfd;
+      overflow: hidden;
+      margin-top: 10px;
+      .module__img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+      .img__one {
+        top: 40%;
+      }
+      .img__watch {
+        top: 35%;
+      }
+      .light {
+        color: $white;
+        .cta__links {
+          color: $lightblue;
+        }
+      }
+      .dark {
+        color: black;
+        .cta__links {
+          color: $blue;
+        }
+      }
+      .top {
+        top: 0;
+      }
+      .bottom {
+        bottom: 0;
+      }
+      .copy__wrapper {
+        z-index: 2;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin: 53px 0 44px;
+        text-align: center;
+        h4 {
+          margin-top: 44px;
+          font-size: 40px;
+          font-weight: 500;
+          margin: 0;
+          letter-spacing: -0.005em;
+        }
+        h5 {
+          font-weight: 300;
+          font-size: 21px;
+          margin: 6px 0 14px;
+          letter-spacing: 0.004em;
+          line-height: 1.25;
+          sup {
+            font-size: 12px;
+            font-weight: 400;
+          }
+        }
+        .cta__links {
+          margin-top: 14px;
+          font-size: 17px;
+          font-weight: 300;
+          &:nth-of-type(2) {
+            padding-left: 35px;
+          }
+          sup {
+            font-size: 12px;
+            font-weight: 400;
+          }
+        }
+        .chevron-right {
+          height: 10px;
+        }
+      }
+    }
+  }
+}
+
+// @media (min-width: 1069px) {
+
+// }
+// desktop
+@media (min-width: 736px) {
+  #modules .col {
+    flex-wrap: wrap;
+    height: calc((590px) * 3);
+    .left {
+      margin-right: 5px;
+    }
+    .right {
+      margin-left: 5px;
+    }
+    .module {
+      width: calc(50% - 5px);
+    }
+  }
+}

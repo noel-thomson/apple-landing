@@ -1,6 +1,12 @@
 nav {
   height: 44px;
   background-color: #333333;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
   .nav__wrapper {
     padding: 0 22px;
     height: 100%;

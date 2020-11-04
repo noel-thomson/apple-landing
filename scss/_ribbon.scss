@@ -2,17 +2,23 @@
   background-color: white;
   color: #1d1d1f;
   font-weight: 400;
-  height: 44px;
+  margin-top: 44px;
   .ribbon__container {
-    width: 692px;
     margin: 0 auto;
     text-align: center;
     font-size: 14px;
+    padding: 10px 0;
+    width: max-content;
     a {
       color: $blue;
-      line-height: 44px;
+      line-height: 20px;
       &:hover {
         text-decoration: underline;
+      }
+    }
+    @media (min-width: 735px) {
+      br {
+        display: none;
       }
     }
   }

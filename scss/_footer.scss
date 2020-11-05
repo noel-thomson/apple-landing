@@ -81,3 +81,9 @@ footer {
     }
   }
 }
+
+@media (max-width: 568px) {
+  #footer__middle {
+    display: none;
+  }
+}

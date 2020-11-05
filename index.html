@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Apple</title>
+    <title>Apple (Canada)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/styles.css">
@@ -13,7 +13,13 @@
     <nav>
       <div class="nav__wrapper">
         <ul class="nav__container">
-          <li class="nav__item">
+          <li class="nav__item nav__item__toggle">
+            <a href="#" class="nav__link nav__link__menu__icon">
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+          <li class="nav__item nav__item__logo">
             <a href="#" class="nav__link nav__link__img nav__link__logo">
             </a>
           </li>
@@ -52,11 +58,11 @@
               Support
             </a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item nav__item__search">
             <a href="#" class="nav__link nav__link__img nav__link__search">
             </a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item nav__item__bag">
             <a href="#" class="nav__link nav__link__img nav__link__bag">
             </a>
           </li>
@@ -66,11 +72,19 @@
     <main>
       <section id="ribbon">
         <div class="ribbon__container">
-          <a href="#">Shop online</a> for free, no‑contact delivery. <br> Call us at 1-800-MY-APPLE or visit <a href="#">support</a>.
+          <p>
+            <a href="#">Shop online</a> 
+            for free, no‑contact delivery. <br> 
+            <span id="ribbon__contact__sm"><a href="#">Call</a> us</span>
+            <span id="ribbon__contact__lg">Call us at 1-800-MY-APPLE</span> 
+            or visit <a href="#">support</a>.
+          </p> 
         </div>
       </section>
       <section class="hero" id="hero__1">
-        <img class="hero__image" src="./assets/images/heroes/iphone-12-pro/hero.jpg" alt="">
+        <img class="hero__image hero__image__lg" src="./assets/images/heroes/iphone-12-pro/hero-1-large.jpg" alt="">
+        <img class="hero__image hero__image__md" src="./assets/images/heroes/iphone-12-pro/hero-1-med.jpg" alt="">
+        <img class="hero__image hero__image__sm" src="./assets/images/heroes/iphone-12-pro/hero-1-small.jpg" alt="">
         <div class="copy__wrapper">
           <h2>iPhone 12 Pro</h2>
           <h3>It's a leap year.</h3>
@@ -85,7 +99,9 @@
         </div>
       </section>
       <section class="hero" id="hero__2">
-        <img class="hero__image" src="./assets/images/heroes/iphone-12/hero-large-tall.jpg" alt="">
+        <img class="hero__image hero__image__lg" src="./assets/images/heroes/iphone-12/hero-2-large.jpg" alt="">
+        <img class="hero__image hero__image__md" src="./assets/images/heroes/iphone-12/hero-2-med.jpg" alt="">
+        <img class="hero__image hero__image__sm" src="./assets/images/heroes/iphone-12/hero-2-small.jpg" alt="">
         <div class="copy__wrapper">
           <h2>iPhone 12</h2>
           <h3>Blast past fast.</h3>
@@ -100,27 +116,35 @@
         </div>
       </section>
       <section class="hero" id="hero__3">
-        <img class="hero__image" src="./assets/images/heroes/watch-6/apple-watch.jpg" alt="">
+        <img class="hero__image hero__image__lg" src="./assets/images/heroes/watch-6/hero-3-large.jpg" alt="">
+        <img class="hero__image hero__image__md" src="./assets/images/heroes/watch-6/hero-3-med.jpg" alt="">
+        <img class="hero__image hero__image__sm" src="./assets/images/heroes/watch-6/hero-3-small.jpg" alt="">
         <div class="copy__wrapper">
-          <img class="logo__image" src="./assets/images/logos/watch-series-6/watch-logo.png" alt="">
+          <img class="logo__image logo__image__lg" src="./assets/images/logos/watch-series-6/watch-logo-large.png" alt="">
+          <img class="logo__image logo__image__md" src="./assets/images/logos/watch-series-6/watch-logo-med.png" alt="">
+          <img class="logo__image logo__image__sm" src="./assets/images/logos/watch-series-6/watch-logo-small.png" alt="">
           <h3>The future of health is on your wrist.</h3>
           <a class="cta__links" href="#">Learn more <img class="chevron-right" src="./assets/images/icons/chevron.png" alt=""></a>
           <a class="cta__links" href="#">Buy <img class="chevron-right" src="./assets/images/icons/chevron.png" alt=""></a> 
         </div>
       </section>
-      <div id="modules">
+      <section id="modules">
         <div class="col">
           <div class="module left">
-            <img class="module__img img__event" src="./assets/images/modules/apple-event.jpg" alt="">
+            <img class="module__img img__event img__lg" src="./assets/images/modules/apple-event.jpg" alt="">
+            <img class="module__img img__event img__md" src="./assets/images/modules/apple-event-med.jpg" alt="">
+            <img class="module__img img__event img__sm" src="./assets/images/modules/apple-event-sm.jpg" alt="">
             <div class="copy__wrapper light bottom">
               <h4>Apple Event</h4>
               <h5>Watch on our US site on 11.10 at 10 a.m. PST.</h5>
               <a class="cta__links" href="#">Learn more <img class="chevron-right" src="./assets/images/icons/chevron.png" alt=""></a>
             </div>
           </div>
-          <div class="module left">
-            <img class="module__img img__ipad" src="./assets/images/modules/ipad-air.jpg" alt="">
-            <div class="copy__wrapper dark top">
+          <div class="module right">
+            <img class="module__img img__ipad img__lg" src="./assets/images/modules/ipad-air.jpg" alt="">
+            <img class="module__img img__ipad img__md" src="./assets/images/modules/ipad-air-med.jpg" alt="">
+            <img class="module__img img__ipad img__sm" src="./assets/images/modules/ipad-air-sm.jpg" alt="">
+            <div class="copy__wrapper copy__ipad dark top">
               <h4>iPad Air</h4>
               <h5>Powerful. Colourful. Wonderful.</h5>
               <a class="cta__links" href="#">Learn more <img class="chevron-right" src="./assets/images/icons/chevron-dark.png"
@@ -130,9 +154,12 @@
             </div>
           </div>
           <div class="module left">
-            <img class="module__img img__one" src="./assets/images/modules/apple-one.jpg" alt="">
+            <img class="module__img img__one img__lg" src="./assets/images/modules/apple-one.jpg" alt="">
+            <img class="module__img img__one img__md" src="./assets/images/modules/apple-one-med.jpg" alt="">
+            <img class="module__img img__one img__sm" src="./assets/images/modules/apple-one-sm.jpg" alt="">
             <div class="copy__wrapper dark top">
-              <img src="./assets/images/logos/apple-one/apple-one-large.png" alt="">
+              <img class="logo-lg" src="./assets/images/logos/apple-one/apple-one-large.png" alt="">
+              <img class="logo-md" src="./assets/images/logos/apple-one/apple-one-med.png" alt="">
               <h5>Bundle up to six Apple services.<sup>1</sup> <br>And enjoy more for less.</h5>
               <a class="cta__links" href="#">Learn more <img class="chevron-right" src="./assets/images/icons/chevron-dark.png"
                   alt=""></a>
@@ -141,18 +168,24 @@
             </div>
           </div>
           <div class="module right">
-            <img class="module__img img__fitness" src="./assets/images/modules/fitness.jpg" alt="">
+            <img class="module__img img__fitness img__lg" src="./assets/images/modules/fitness.jpg" alt="">
+            <img class="module__img img__fitness img__md" src="./assets/images/modules/fitness-med.jpg" alt="">
+            <img class="module__img img__fitness img__sm" src="./assets/images/modules/fitness-sm.jpg" alt="">
             <div class="copy__wrapper dark top">
-              <img src="./assets/images/logos/apple-fitness-plus/fitness-large.png" alt="">
+              <img class="logo-lg" src="./assets/images/logos/apple-fitness-plus/fitness-large.png" alt="">
+              <img class="logo-md" src="./assets/images/logos/apple-fitness-plus/fitness-med.png" alt="">
               <h5>A new fitness experience <br> powered by Apple Watch.</h5>
               <a class="cta__links" href="#">Learn more <img class="chevron-right" src="./assets/images/icons/chevron-dark.png"
                   alt=""></a>
             </div>
           </div>
-          <div class="module right">
-            <img class="module__img img__watch" src="./assets/images/modules/watch.jpg" alt="">
+          <div class="module left">
+            <img class="module__img img__watch img__lg" src="./assets/images/modules/watch.jpg" alt="">
+            <img class="module__img img__watch img__md" src="./assets/images/modules/watch-med.jpg" alt="">
+            <img class="module__img img__watch img__sm" src="./assets/images/modules/watch-sm.jpg" alt="">
             <div class="copy__wrapper dark top">
-              <img src="./assets/images/logos/watch-se/watch-large.png" alt="">
+              <img class="logo-lg" src="./assets/images/logos/watch-se/watch-large.png" alt="">
+              <img class="logo-md" src="./assets/images/logos/watch-se/watch-med.png" alt="">
               <h5>Heavy on features. Light on price.</h5>
               <a class="cta__links" href="#">Learn more <img class="chevron-right" src="./assets/images/icons/chevron-dark.png"
                   alt=""></a>
@@ -161,16 +194,19 @@
             </div>
           </div>
           <div class="module right">
-            <img class="module__img img__tv" src="./assets/images/modules/apple-tv.jpg" alt="">
+            <img class="module__img img__tv img__lg" src="./assets/images/modules/apple-tv.jpg" alt="">
+            <img class="module__img img__tv img__md" src="./assets/images/modules/apple-tv-med.jpg" alt="">
+            <img class="module__img img__tv img__sm" src="./assets/images/modules/apple-tv-sm.jpg" alt="">
             <div class="copy__wrapper light bottom">
-              <img src="./assets/images/logos/tv-plus/tv-logo.png" alt="">
-              <h5>Get one year of Apple TV+ free when you buy an Apple device.<sup>3</sup> </h5>
+              <img class="logo-lg" src="./assets/images/logos/tv-plus/tv-logo.png" alt="">
+              <img class="logo-md" src="./assets/images/logos/tv-plus/tv-med.png" alt="">
+              <h5>Get one year of Apple TV+ free when <br> you buy an Apple device.<sup>3</sup> </h5>
               <a class="cta__links" href="#">Learn more <img class="chevron-right" src="./assets/images/icons/chevron.png"
                   alt=""></a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer>
       <section id="footer__top" class="footer__section">

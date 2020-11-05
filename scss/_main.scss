@@ -8,7 +8,7 @@
     flex-wrap: nowrap;
     .module {
       position: relative;
-      height: 580px;
+      height: 500px;
       width: 100%;
       background-color: #fbfbfd;
       overflow: hidden;
@@ -51,18 +51,18 @@
         margin: 53px 0 44px;
         text-align: center;
         h4 {
-          margin-top: 44px;
-          font-size: 40px;
+          font-size: 32px;
           font-weight: 500;
           margin: 0;
           letter-spacing: -0.005em;
         }
         h5 {
           font-weight: 300;
-          font-size: 21px;
+          font-size: 19px;
           margin: 6px 0 14px;
           letter-spacing: 0.004em;
           line-height: 1.25;
+          width: max-content;
           sup {
             font-size: 12px;
             font-weight: 400;
@@ -88,10 +88,7 @@
   }
 }
 
-// @media (min-width: 1069px) {
-
-// }
-// desktop
+// medium and large
 @media (min-width: 736px) {
   #modules .col {
     flex-wrap: wrap;
@@ -104,6 +101,105 @@
     }
     .module {
       width: calc(50% - 5px);
+    }
+    .module:nth-of-type(1),
+    .module:nth-of-type(3),
+    .module:nth-of-type(5) {
+      order: 1;
+    }
+    .module:nth-of-type(2),
+    .module:nth-of-type(4),
+    .module:nth-of-type(6) {
+      order: 2;
+    }
+  }
+}
+
+// small and medium
+@media (max-width: 1067px) {
+  #modules .col {
+    .module {
+      .copy__wrapper {
+        .logo-lg {
+          display: none;
+        }
+      }
+      .copy__ipad {
+        top: initial;
+        bottom: 0;
+        h4 {
+          display: none;
+        }
+        h5 {
+          width: max-content;
+        }
+      }
+    }
+  }
+}
+
+// small
+@media (max-width: 735px) {
+  #modules .col {
+    .module {
+      .img__md,
+      .img__lg {
+        display: none;
+      }
+      .img__ipad {
+        top: 0;
+      }
+    }
+  }
+}
+
+// medium
+@media (min-width: 736px) and (max-width: 1067px) {
+  #modules .col {
+    height: calc((498px) * 3);
+    .module {
+      width: calc(50% - 5px);
+      height: 488px;
+      .img__lg,
+      .img__sm {
+        display: none;
+      }
+      .img__ipad {
+        top: -10%;
+      }
+      .img__one {
+        top: 50%;
+      }
+      .img__fitness {
+        top: -10%;
+      }
+      .img__watch {
+        top: 40%;
+      }
+    }
+  }
+}
+
+// large
+@media (min-width: 1069px) {
+  #modules .col {
+    .module {
+      height: 580px;
+      .img__md,
+      .img__sm {
+        display: none;
+      }
+      .copy__wrapper {
+        .logo-md {
+          display: none;
+        }
+        h4 {
+          font-size: 44px;
+        }
+        h5 {
+          font-size: 21px;
+        }
+      }
     }
   }
 }

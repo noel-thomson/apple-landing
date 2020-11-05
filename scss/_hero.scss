@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   color: $white;
-  height: 816px;
+  height: 829px;
   top: 0;
   overflow: hidden;
   .hero__image {
@@ -61,7 +61,7 @@
 }
 #hero__2 {
   color: black;
-  height: 934px;
+  height: 951px;
   .hero__image {
     top: -45px;
     z-index: -2;
@@ -73,8 +73,9 @@
   }
   .copy__wrapper__bottom {
     h2 {
-      font-weight: 500;
+      font-weight: 400;
       &:nth-of-type(n + 2) {
+        font-weight: 300;
         color: $darkgray;
       }
     }
@@ -90,8 +91,122 @@
   }
   .copy__wrapper {
     padding-top: 43px;
-    .logo__image {
-      height: 64px;
+    // .logo__image {
+    //   height: 64px;
+    // }
+  }
+}
+
+// large
+@media (min-width: 1069px) {
+  #hero__1,
+  #hero__2,
+  #hero__3 {
+    .hero__image__md,
+    .hero__image__sm {
+      display: none;
+    }
+  }
+  #hero__3 {
+    .copy__wrapper {
+      .logo__image__md,
+      .logo__image__sm {
+        display: none;
+      }
+    }
+  }
+}
+
+// medium
+@media (min-width: 769px) and (max-width: 1068px) {
+  #hero__1,
+  #hero__2,
+  #hero__3 {
+    .hero__image__lg,
+    .hero__image__sm {
+      display: none;
+    }
+  }
+  #hero__1 {
+    height: 754px;
+  }
+  #hero__2 {
+    height: 871px;
+  }
+  #hero__3 {
+    height: 650px;
+    .copy__wrapper {
+      .logo__image__lg,
+      .logo__image__sm {
+        display: none;
+      }
+    }
+  }
+  .hero {
+    .copy__wrapper {
+      padding-top: 59px;
+      h2 {
+        font-size: 48px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+      .cta__links {
+        font-size: 19px;
+      }
+    }
+    .copy__wrapper__bottom {
+      bottom: 63px;
+    }
+  }
+}
+
+// small
+@media (max-width: 768px) {
+  #hero__1,
+  #hero__2,
+  #hero__3 {
+    .hero__image__lg,
+    .hero__image__md {
+      display: none;
+    }
+  }
+  #hero__1 {
+    height: 665px;
+  }
+  #hero__2 {
+    height: 665px;
+  }
+  #hero__3 {
+    height: 500px;
+    .hero__image__sm {
+      height: 333px;
+    }
+    .copy__wrapper {
+      .logo__image__lg,
+      .logo__image__md {
+        display: none;
+      }
+    }
+  }
+  .hero {
+    .copy__wrapper {
+      padding-top: 22px;
+      h2 {
+        font-size: 32px;
+      }
+      h3 {
+        font-size: 19px;
+      }
+      .cta__links {
+        font-size: 19px;
+      }
+    }
+    .copy__wrapper__bottom {
+      bottom: 42px;
+      h2 {
+        font-size: 19px;
+      }
     }
   }
 }
